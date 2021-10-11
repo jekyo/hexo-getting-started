@@ -5,8 +5,8 @@
   "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
-    "deploy": "hexo deploy --port $PORT --host $HOST",
-    "server": "hexo server"
+    "deploy": "hexo deploy",
+    "server": "hexo server --port $PORT --host $HOST"
   },
   "hexo": {
     "version": "5.4.0"
