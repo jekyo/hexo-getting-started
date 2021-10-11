@@ -76,7 +76,15 @@ Navigate to your local Hexo app directory
 
 Initialize a git repository if you haven't already done so by running `git init`. 
 
-Create an empty Jekyo app:
+Add this line in _scripts_ in your **package.json** file:
+
+```
+"start": "hexo server --port $PORT --host $HOST"
+```
+This specifies the necessary Jekyo port and host variables.
+
+
+### Create an empty Jekyo app:
 
 `jekyo create` 
 
@@ -97,7 +105,7 @@ Run `jekyo link` to link your local app to the remote Jekyo app. Select 'my-hexo
 ? Select application (Use arrow keys)
 ❯ my-hexo-app
 ```
-Now you can deploy this app to Jekyo by running: 
+### Now you can deploy this app to Jekyo by running: 
 
 `jekyo deploy`
 
